@@ -8,9 +8,9 @@
 
 ```properties
 # 应用详情-APPID
-appID=1020
+appID=换成你自己的
 # 应用详情-APPKEY
-appKey=a42fc1243a0e6ac326d801b2d5fed555
+appKey=换成你自己的
 # 跳转回本系统的地址
 redirectUrl=http://biuaxia.top/api/login/callback
 ```
