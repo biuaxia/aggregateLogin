@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息</title>
+</head>
+<body>
+
+<div th:if="${ userinfo != null}">
+    <table>
+        <tr>
+            <td>头像</td>
+            <td><img width="45" height="45" th:src="${userinfo.faceimg}" th:title="${userinfo.nickname}"/></td>
+        </tr>
+        <tr>
+            <td>昵称</td>
+            <td th:text="${userinfo.nickname}"></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td th:text="${userinfo.gender}"></td>
+        </tr>
+        <tr>
+            <td>类型</td>
+            <td th:text="${userinfo.type}"></td>
+        </tr>
+        <tr>
+            <td>定位</td>
+            <td th:text="${userinfo.location}"></td>
+        </tr>
+        <tr>
+            <td>IP</td>
+            <td th:text="${userinfo.ip}"></td>
+        </tr>
+        <tr>
+            <td>UID</td>
+            <td th:text="${userinfo.socialUid}"></td>
+        </tr>
+    </table>
+</div>
+
+<p><a href="/">返回首页</a></p>
+
+</body>
+</html>

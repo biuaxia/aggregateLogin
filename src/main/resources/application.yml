@@ -1,0 +1,13 @@
+logging:
+  level:
+    cn.biuaxia.code.aggregatelogin: debug
+spring:
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+    check-template-location: true
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+    cache: false
